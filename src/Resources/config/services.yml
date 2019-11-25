@@ -1,0 +1,19 @@
+services:
+  palette.request_listener:
+    class: SymfonyPaletteBundle\EventListener\RequestListener
+    arguments:
+      - '@palette.palette'
+    tags:
+      - { name: kernel.event_listener, event: kernel.request }
+  palette.twig_extension:
+    class: SymfonyPaletteBundle\Twig\PaletteExtension
+    arguments:
+      - '@palette.palette'
+    tags:
+      - { name: twig.extension }
+  palette.palette:
+    class: SymfonyPaletteBundle\Palette
+    arguments:
+        - '@logger'
+        - []
+

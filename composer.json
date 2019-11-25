@@ -1,0 +1,25 @@
+{
+  "name": "pavlista/symfony-palette-bundle",
+  "description": "Palette support for Symfony Framework",
+  "keywords": ["symfony", "twig", "image", "thumbnail", "watermark", "gd", "imagick"],
+  "homepage": "https://github.com/MichaelPavlista/symfony-palette-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Michael Pavlista"
+    },
+    {
+      "name": "Martin Bruna"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "pavlista/palette": ">=2.7.2 <3.0",
+    "symfony/framework-bundle": "3.4.*",
+    "symfony/yaml": "3.4.*",
+    "twig/twig": "2.6.0"
+  },
+  "autoload": {
+    "psr-4": { "SymfonyPaletteBundle\\": "src" }
+  }
+}
