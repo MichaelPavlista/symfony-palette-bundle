@@ -79,6 +79,11 @@ class Palette
             }
         }
 
+        if (TRUE === isset($config['defaultQuality']))
+        {
+            $this->generator->setDefaultQuality((int) $config['defaultQuality']);
+        }
+
         // Set website url (optional)
         $this->websiteUrl = $config['websiteUrl'] ?? NULL;
 
