@@ -40,6 +40,9 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('websiteUrl')->end()
             ->end()
             ->children()
+                ->scalarNode('defaultQuality')->end()
+            ->end()
+            ->children()
                 ->arrayNode('templates')->useAttributeAsKey('name')->prototype('scalar')->end()
             ->end()
         ;
