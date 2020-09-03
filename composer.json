@@ -17,7 +17,7 @@
     "pavlista/palette": ">=2.7.2 <3.0",
     "symfony/framework-bundle": "3.4.*",
     "symfony/yaml": "3.4.*",
-    "twig/twig": "2.6.0"
+    "twig/twig": ">=2.6.0 <3"
   },
   "autoload": {
     "psr-4": { "SymfonyPaletteBundle\\": "src" }
